@@ -1,7 +1,7 @@
 ﻿using Foundation;
 using UIKit;
 
-namespace AppleMapPolygonTest
+namespace XamarinMapsDrawPolygon.iOS
 {
     [Register("AppDelegate")]
     public class AppDelegate : UIApplicationDelegate

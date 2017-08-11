@@ -1,6 +1,6 @@
 ﻿using UIKit;
 
-namespace AppleMapPolygonTest
+namespace XamarinMapsDrawPolygon.iOS
 {
     public class Application
     {

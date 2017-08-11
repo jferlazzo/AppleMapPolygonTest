@@ -4,7 +4,7 @@ using MapKit;
 using UIKit;
 using XamarinMapsDrawPolygon.Portable;
 
-namespace AppleMapPolygonTest
+namespace XamarinMapsDrawPolygon.iOS
 {
     public class MapViewController : UIViewController
     {
