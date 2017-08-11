@@ -2,7 +2,7 @@
 using CoreLocation;
 using MapKit;
 using UIKit;
-using XamarinMapsDrawPolygon.Portable;
+using XamarinMapsDrawPolygon.Core;
 
 namespace XamarinMapsDrawPolygon.iOS
 {
@@ -64,6 +64,7 @@ namespace XamarinMapsDrawPolygon.iOS
         public override MKOverlayView GetViewForOverlay(MKMapView mapView, IMKOverlay overlay)
         {
             var polygon = overlay as MKPolygon;
+
             var polygonView = new MKPolygonView(polygon)
             {
                 FillColor   = UIColor.LightGray,

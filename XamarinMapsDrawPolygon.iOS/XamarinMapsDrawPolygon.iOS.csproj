@@ -91,17 +91,24 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
     <Content Include="Entitlements.plist" />
+    <None Include="packages.config" />
+    <Content Include="SampleData.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\XamarinMapsDrawPolygon.Portable\XamarinMapsDrawPolygon.Portable.csproj">
-      <Project>{fc08f1e5-eb84-4d65-b39e-2230ba7505b5}</Project>
-      <Name>XamarinMapsDrawPolygon.Portable</Name>
+    <ProjectReference Include="..\XamarinMapsDrawPolygon.Core\XamarinMapsDrawPolygon.Core.csproj">
+      <Project>{97c5454a-5f42-4b76-a199-0425923ffcf8}</Project>
+      <Name>XamarinMapsDrawPolygon.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
