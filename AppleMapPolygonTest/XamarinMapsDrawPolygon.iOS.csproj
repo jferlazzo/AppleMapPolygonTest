@@ -99,5 +99,11 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XamarinMapsDrawPolygon.Portable\XamarinMapsDrawPolygon.Portable.csproj">
+      <Project>{fc08f1e5-eb84-4d65-b39e-2230ba7505b5}</Project>
+      <Name>XamarinMapsDrawPolygon.Portable</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
