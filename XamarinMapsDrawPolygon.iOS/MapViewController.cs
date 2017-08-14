@@ -60,19 +60,24 @@ namespace XamarinMapsDrawPolygon.iOS
                 CanShowCallout = true
             };
         }
-        
-        public override MKOverlayView GetViewForOverlay(MKMapView mapView, IMKOverlay overlay)
+
+        public override MKOverlayRenderer OverlayRenderer(MKMapView mapView, IMKOverlay overlay)
         {
             var polygon = overlay as MKPolygon;
 
-            var polygonView = new MKPolygonView(polygon)
+            if (polygon != null)
             {
-                FillColor   = UIColor.LightGray,
-                StrokeColor = UIColor.DarkGray,
-                LineWidth   = 3f
-            };
+                var polygonRenderer = new MKPolygonRenderer(polygon)
+                {
+                    FillColor   = UIColor.LightGray,
+                    StrokeColor = UIColor.DarkGray,
+                    LineWidth   = 3f
+                };
 
-            return polygonView;
+                return polygonRenderer;
+            }
+
+            return mapView.RendererForOverlay(overlay);
         }
     } 
 }
